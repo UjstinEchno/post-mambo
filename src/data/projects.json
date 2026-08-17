@@ -2,6 +2,7 @@
 	{
 		"id": "tahara",
 		"title": "Tahara",
+		"date": "2022-06-10",
 		"image": "/tahara-poster.jpg",
 		"creditspriority": [
 			{
@@ -66,8 +67,57 @@
 		]
 	},
 	{
+		"id": "mexam",
+		"title": "Mexican\u200bamerican",
+		"date": "2026-06-09",
+		"image": "/mexam-poster.jpg",
+		"creditspriority": [
+			{
+				"type": "credit",
+				"role": "Sound Design",
+				"id": "1",
+				"name": "Justin Enoch"
+			}
+		],
+		"creditslaurels": [
+			{
+				"type": "credit",
+				"role": "Director",
+				"name": "Eddie Sanchez"
+			},
+			{
+				"type": "credit",
+				"role": "Producer",
+				"name": "Michael Rogerson"
+			},
+			{
+				"type": "laurel",
+				"image": "/mexam-tribeca-award-white.png"
+			},
+			{
+				"type": "laurel",
+				"image": "/mexam-riff.png"
+			}
+		],
+		"description": "Expertly merging old VHS home movies with new family interviews, filmmaker Eddie Sánchez traces his parents' journey from Mexico to the U.S. in this poignant and affecting documentary debut.",
+		"pressquotes": [
+			{
+				"publication": "The New York Times",
+				"quote": "“An earlier form of media is collaged into a moving ancestral story in “Mexicanamerican,” from Eddie Sánchez. For his feature debut, the filmmaker sifted through hours of home video recorded by his parents, Lalo and Beby, to assemble the tale of their meeting in Mexico and move to Oregon, where they raised their children. The footage originally served as a kind of visual missive, captured by Lalo and Beby to mail to relatives in Mexico. Pairing the video with candid interviews about his parents’ passage to the United States and efforts to assimilate to a new culture, Sánchez crafts a portrait of diasporic identity that pulls from the past while tilting hopefully toward the future.”"
+			}
+		],
+		"videos": [
+			{
+				"source": "youtube",
+				"id": "CHhfF-rEliI",
+				"description": "Trailer"
+			}
+		]
+	},
+	{
 		"id": "againstreality",
 		"title": "Against Reality",
+		"date": "2022-09-09",
 		"image": "/againstreality-poster.jpg",
 		"creditspriority": [
 			{
@@ -113,7 +163,8 @@
 	},
 	{
 		"id": "alljackedup",
-		"title": "All Jacked Up and Full of Worms",
+		"title": "All Jacked Up\u200band Full of Worms",
+		"date": "2022-07-16",
 		"image": "/worms-poster.jpg",
 		"creditspriority": [
 			{
@@ -155,8 +206,9 @@
 	},
 	{
 		"id": "daughters",
-		"title": "Daughters",
-		"image": "/daughters-poster.png",
+		"title": "Daugh\u200bters",
+		"date": "2024-08-14",
+		"image": "/daughters-poster.jpg",
 		"creditspriority": [
 			{
 				"type": "credit",
@@ -209,6 +261,7 @@
 	{
 		"id": "readseamission",
 		"title": "Inside the Red Sea Mission",
+		"date": "2023-05-28",
 		"image": "/redsea_poster.jpg",
 		"creditspriority": [
 			{
@@ -248,6 +301,7 @@
 	{
 		"id": "flail",
 		"title": "Flail",
+		"date": "2024-05-11",
 		"image": "/flail_poster.jpg",
 		"creditspriority": [
 			{
@@ -278,7 +332,12 @@
 			}
 		],
 		"description": "It's her boss's birthday, and Allie is trying as hard as she can.",
-		"pressquotes": [],
+		"pressquotes": [
+			{
+				"publication": "rogerebert.com",
+				"quote": "“Flail” got big laughs when it played in Chicago last spring; it might be what someone needs at the end of a long, hard day of being overworked and undervalued. It’s a workplace comedy that is all over the place, both by design and intention. If you feel like “this is me every day,” maybe start by, you know, turning “off notifications”"
+			}
+		],
 		"videos": [
 			{
 				"source": "vimeo",
@@ -289,7 +348,8 @@
 	},
 	{
 		"id": "arevolutionaryact",
-		"title": "A Revolutionary Act",
+		"title": "A Revolu\u200btionary Act",
+		"date": "2021-04-29",
 		"image": "/revolutionaryact_poster.png",
 		"creditspriority": [
 			{

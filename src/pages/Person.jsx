@@ -1,33 +1,21 @@
-function Project ({ personinfo }) {
+function Person ({ personinfo, style, onClick }) {
 	return (
-		<>
-			<div className='overlay'></div>
-
-			<div
-				className={`overflow-hidden bg-darkyellow design shrink-0 w-full md:shrink-0`}>
-				<div className='inline-block mt-10'>
-					<div className='ml-8 mr-8 mb-20 grid min-[640px]:grid-cols-2'>
-						<div className='col-start-0 col-span-1'>
-							<img
-								src={personinfo.photo}
-								className='object-scale-down max-h-screen'></img>
-						</div>
-						<div className='col-span-1 sm:mt-6 md:mt-6'>
-							<p className='mt-4 text-silver text-center text-xl font-authenticSans130 tracking-tight'>
-								{personinfo.bio}
-							</p>
-						</div>
-						<div className='absolute'>
-							<h1
-								className={`uppercase mt-96 text-silver text-6xl min-[640px]:text-8xl break-word font-authenticSans150`}>
-								{personinfo.name}
-							</h1>
-						</div>
-					</div>
-				</div>
+		<button
+			onClick={onClick}
+			style={style}
+			className='group aspect-[3/4] md:h-[75%] overflow-hidden rounded-3xl border-2 border-white hover:border-yellowgreen transition-colors duration-450 shadow-lg shadow-black/30 text-left'
+		>
+			<img
+				src={personinfo.photo}
+				className='absolute inset-0 h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]'
+			/>
+			<div className='absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 pt-10'>
+				<h2 className='lowercase text-blue font-authenticSans130 text-2xl md:text-3xl tracking-tight bg-yellowgreen'>
+					{personinfo.name}
+				</h2>
 			</div>
-		</>
+		</button>
 	);
 }
 
-export default Project;
+export default Person;

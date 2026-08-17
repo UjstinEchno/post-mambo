@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 .dropboxignore
+*.code-workspace
+
+# macOS AppleDouble resource-fork files (shows up on non-native filesystems
+# like network/exFAT drives — this repo lives on one)
+._*

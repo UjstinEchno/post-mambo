@@ -9,7 +9,7 @@ import HeaderLogo from './pages/HeaderLogo';
 function App () {
 	return (
 		<Router>
-			<div className='w-screen h-full overflow-hidden relative shrink-0 m-0 p-0'>
+			<div className='w-full h-full overflow-hidden relative shrink-0 m-0 p-0'>
 				<HeaderLogo />
 				<Routes>
 					<Route path='/' element={<Home />} />

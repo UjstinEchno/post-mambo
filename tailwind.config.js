@@ -11,6 +11,7 @@ export default {
 			...defaultTheme.screens,
 		},
 		colors: {
+			white: '#ffffff',
 			silver: '#E8EBF7',
 			yellow: '#fefec0',
 			periwinkle: '#cdc7e5',
@@ -22,6 +23,8 @@ export default {
 			navy: '#0E3570',
 			green: '#4e6f21',
 			yellowgreen: '#8fc93a',
+			gray: '#818479',
+			amber: '#fea82f',
 			black: '#000015',
 			folly: '#ff1053',
 			vermilion: '#f64740',
@@ -38,6 +41,11 @@ export default {
 			authenticSansCondensed130: ['"AUTHENTIC Sans Condensed 130"'],
 			authenticSansCondensed150: ['"AUTHENTIC Sans Condensed 150"'],
 			picnic: ['"PicNic-Regular"'],
+		},
+		fontSize: {
+			...defaultTheme.fontSize,
+			'10xl': '10rem',
+			'11xl': '12rem',
 		},
 	},
 	plugins: [],
