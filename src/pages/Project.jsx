@@ -101,19 +101,25 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 		return colArrCredits[Math.floor(Math.random() * colArrCredits.length)];
 	}, []); [old version of the credit randomizaton - new version below]*/
 
-	const randomOffset = useCallback(
-		() => ({
+	const randomOffset = useCallback(() => {
+		// On desktop's wide canvas a +3rem nudge is imperceptible; on a ~350px mobile
+		// row it's enough to occasionally push a card past the viewport edge (where
+		// it gets clipped, since the ancestor is overflow-hidden). Scale the range
+		// down below md so the same "collage" effect can't overflow there.
+		const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+		const negativeSpan = isMobile ? 0.75 : 1.25;
+		const positiveSpan = isMobile ? 1 : 2.5;
+		return {
 			marginLeft:
 				Math.random() < 0.7
-					? `${(-(0.25 + Math.random() * 1.25)).toFixed(2)}rem` // 70% of the time: -1.5 to -0.25rem — real overlap, the norm
-					: `${(0.5 + Math.random() * 2.5).toFixed(2)}rem`, // 30% of the time: 0.5 to 3rem — occasional real gap, just enough to break the grid rhythm
+					? `${(-(0.25 + Math.random() * negativeSpan)).toFixed(2)}rem` // 70% of the time — real overlap, the norm
+					: `${(0.5 + Math.random() * positiveSpan).toFixed(2)}rem`, // 30% of the time — occasional real gap, just enough to break the grid rhythm
 			marginTop: `${(Math.random() * 1.25).toFixed(2)}rem`, // 0 to 1.25rem — wider vertical stagger too, so rows don't stack into visual columns
 			transform: `rotate(${(Math.random() * 4 - 2).toFixed(2)}deg) scale(${(0.98 + Math.random() * 0.04).toFixed(2)})`, // -2 to 2deg, 0.98 to 1.02 — noticeable rotation, still subtle scale
 			zIndex: Math.floor(Math.random() * 10) + 1,
 			position: 'relative',
-		}),
-		[]
-	);
+		};
+	}, []);
 
 	const lastBasisRef = useRef(null);
 
@@ -161,7 +167,7 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 					<div className='grid grid-cols-8 gap-4 ml-0 mr-0 mb-20'>
 
 						{/* Left: poster */}
-							<div className='col-start-1 col-span-8 lg:col-span-4 xl:col-span-4 2xl:col-span-4 ml-2 md:ml-4'>
+							<div className='col-start-1 col-span-8 lg:col-span-4 xl:col-span-4 2xl:col-span-4 ml-0 md:ml-4'>
 								{projectinfo.image ? (
 									<img src={projectinfo.image} className='rounded-2xl border-1 border-white shadow-xl shadow-black/30'></img>
 								) : null}
@@ -169,7 +175,7 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 
 						{/* Right */}
 							<div className='col-start-1 col-span-8 lg:col-span-4 xl:col-span-4 2xl:col-span-4 sm:mt-6 md:mt-6'>
-								<div className='mr-2 md:mr-4'>
+								<div className='mr-0 md:mr-4'>
 									<h1
 										lang='en'
 										className='text-right md:-ml-24 uppercase text-silver text-5xl md:text-10xl lg:text-10xl xl:text-10xl 2xl:text-10xl break-words [hyphens:auto] font-authenticSans150 leading-[0.85] bg-darkyellow rotate-[.08rad]'> {/* title tilt effect bg-darkyellow rotate-[.08rad]*/}
