@@ -38,11 +38,12 @@ function HeaderLogo () {
 	}
 
 	return (
-		<div className={	`fixed w-1/2 
-							lg:w-1/2 
-							xl:w-1/2 
-							2xl:w-1/2 
-							z-50 
+		<div className={	`fixed w-3/5
+							md:w-1/2
+							lg:w-1/2
+							xl:w-1/2
+							2xl:w-1/2
+							z-50
 							origin-top-left 
 							transition-transform 
 							duration-250 

@@ -45,7 +45,7 @@ function About () {
 	return (
 		<div className='bg-amber min-h-screen'>
 			<Menu />
-			<div className='flex flex-col md:flex-row md:items-center justify-center gap-2 md:gap-3 px-4 md:px-10 pt-24 pb-10 md:h-screen'>
+			<div className='flex flex-col md:flex-row md:items-center justify-center gap-2 md:gap-3 px-4 md:px-10 pt-24 pb-10 md:pb-36 md:h-screen'>
 				{people.map((personinfo, i) => (
 					<Person
 						key={personinfo.name}

@@ -172,7 +172,7 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 								<div className='mr-2 md:mr-4'>
 									<h1
 										lang='en'
-										className='-ml-24 text-right uppercase text-silver text-10xl md:text-10xl lg:text-10xl xl:text-10xl 2xl:text-10xl break-words [hyphens:auto] font-authenticSans150 leading-[0.85] bg-darkyellow rotate-[.08rad]'> {/* title tilt effect bg-darkyellow rotate-[.08rad]*/}
+										className='-ml-24 text-right uppercase text-silver text-5xl md:text-10xl lg:text-10xl xl:text-10xl 2xl:text-10xl break-words [hyphens:auto] font-authenticSans150 leading-[0.85] bg-darkyellow rotate-[.08rad]'> {/* title tilt effect bg-darkyellow rotate-[.08rad]*/}
 										{renderTitle(projectinfo.title)}
 									</h1>
 
@@ -211,8 +211,7 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 														return (
 															<div
 																key={item.image}
-																style={randomOffset()}
-																className={randomBasis()}>
+																style={randomOffset()}>
 																<img src={item.image} className='max-h-32 w-auto' />
 															</div>
 														);
