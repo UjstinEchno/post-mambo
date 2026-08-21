@@ -142,7 +142,7 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 	// Deliberate height variety, independent of whether the role text happens to wrap.
 	// min-h is a floor only — it can never clip content, unlike the old max-h approach.
 	const randomHeight = useCallback(() => {
-		const heightArr = ['min-h-16', 'min-h-20', 'min-h-24', 'min-h-28'];
+		const heightArr = ['min-h-8 md:min-h-16', 'min-h-10 md:min-h-20', 'min-h-12 md:min-h-24', 'min-h-14 md:min-h-28'];
 		const available = heightArr.filter((h) => h !== lastHeightRef.current);
 		const next = available[Math.floor(Math.random() * available.length)];
 		lastHeightRef.current = next;
@@ -157,7 +157,7 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 		<>
 		{id && <Menu />}
 			<div className={`overflow-hidden ${colorRef.current} design shrink-0 md:shrink-0 mx-4 md:mx-8`}>
-				<div className='inline-block mt-36'>
+				<div className='inline-block mt-20 md:mt-36'>
 					<div className='grid grid-cols-8 gap-4 ml-0 mr-0 mb-20'>
 
 						{/* Left: poster */}
@@ -172,20 +172,20 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 								<div className='mr-2 md:mr-4'>
 									<h1
 										lang='en'
-										className='-ml-24 text-right uppercase text-silver text-5xl md:text-10xl lg:text-10xl xl:text-10xl 2xl:text-10xl break-words [hyphens:auto] font-authenticSans150 leading-[0.85] bg-darkyellow rotate-[.08rad]'> {/* title tilt effect bg-darkyellow rotate-[.08rad]*/}
+										className='text-right md:-ml-24 uppercase text-silver text-5xl md:text-10xl lg:text-10xl xl:text-10xl 2xl:text-10xl break-words [hyphens:auto] font-authenticSans150 leading-[0.85] bg-darkyellow rotate-[.08rad]'> {/* title tilt effect bg-darkyellow rotate-[.08rad]*/}
 										{renderTitle(projectinfo.title)}
 									</h1>
 
 									{/* Sub-grid for credits */}
-										<div className='flex flex-wrap justify-end gap-2'>
+										<div className='flex flex-wrap justify-center md:justify-end gap-2'>
 											{projectinfo.creditspriority.map((item) => (
 												<div
 													key={item.name}
 													style={randomOffset()}
 													className={`${align()} ${randomBasis()} ${randomHeight()} rounded-3xl bg-silver text-silver tracking-tight leading-5 flex flex-col align-middle break-words border-2 border-white shadow-lg shadow-black/30`}>
 														<div className='m-auto align-middle'>
-															<p className='ml-4 mr-4 mt-2 text-blue font-authenticSans150 text-lg'>{item.name}</p>
-															<p className='ml-4 mb-2 mr-4 text-blue font-authenticSans90 text-lg'>{item.role}</p>
+															<p className='ml-4 mr-4 mt-2 text-blue font-authenticSans150 text-[9px] md:text-lg'>{item.name}</p>
+															<p className='ml-4 mb-2 mr-4 text-blue font-authenticSans90 text-[9px] md:text-lg'>{item.role}</p>
 												</div>
 											</div>
 												))}
@@ -198,10 +198,10 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 																style={randomOffset()}
 																className={`${align()} ${randomBasis()} ${randomHeight()} rounded-3xl bg-silver text-silver tracking-tight leading-5 flex flex-col align-middle break-words border-2 border-white shadow-lg shadow-black/30`}>
 																<div className='m-auto align-middle'>
-																	<p className='ml-4 mr-4 mt-2 text-blue font-authenticSans150 text-lg'>
+																	<p className='ml-4 mr-4 mt-2 text-blue font-authenticSans150 text-[9px] md:text-lg'>
 																		{item.name}
 																	</p>
-																	<p className='ml-4 mb-2 mr-4 text-blue font-authenticSans90 text-lg'>
+																	<p className='ml-4 mb-2 mr-4 text-blue font-authenticSans90 text-[9px] md:text-lg'>
 																		{item.role}
 																	</p>
 																</div>
@@ -212,7 +212,7 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 															<div
 																key={item.image}
 																style={randomOffset()}>
-																<img src={item.image} className='max-h-32 w-auto' />
+																<img src={item.image} className='max-h-16 md:max-h-32 w-auto' />
 															</div>
 														);
 													}
@@ -221,13 +221,13 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 
 								{/* description*/}
 
-								<p className='mt-4 text-silver text-justify text-xl font-authenticSans130 tracking-tighter [text-shadow:0_0_10px_#fff]'>  {/* bg-amber */}
+								<p className='mt-4 text-silver text-center md:text-justify text-xl font-authenticSans130 tracking-tighter [text-shadow:0_0_10px_#fff]'>  {/* bg-amber */}
 									{projectinfo.description}
 								</p>
 
 								{/* quote */}
 								
-								<div className='quote mt-4 mb-5 text-silver text-justify text-xl font-authenticSansCondensed90 rounded-2xl bg-silver tracking-tighter'>
+								<div className='quote mt-4 mb-5 text-silver text-center md:text-justify text-xl font-authenticSansCondensed90 rounded-2xl bg-silver tracking-tighter'>
 									{projectinfo.pressquotes.map((quote) => (
 										<p key={quote.quote} className='inline-block m-4 text-blue'>
 											{quote.quote} <span>- {quote.publication}</span>
