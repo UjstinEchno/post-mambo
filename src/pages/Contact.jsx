@@ -11,11 +11,11 @@ function Contact () {
 						{contacts.map((contact) => (
 							<div
 								key={contact.job}
-								className='items-center justify-center font-authenticSans130 text-lg md:text-3xl bg-pink'>
-								{contact.job}
+								className='flex flex-col sm:flex-row items-center justify-center text-center font-authenticSans130 text-lg md:text-3xl bg-pink'>
+								<span className='whitespace-nowrap'>{contact.job}</span>
 								<a
 									href={`mailto:${contact.email}`}
-									className='text-xl md:text-4xl ml-3 text-darkyellow'>
+									className='whitespace-nowrap text-xl md:text-4xl sm:ml-3 text-darkyellow'>
 									{contact.email}
 								</a>
 							</div>
