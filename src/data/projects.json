@@ -347,6 +347,54 @@
 		]
 	},
 	{
+		"id": "holdme",
+		"title": "Hold Me Close",
+		"date": "2025-01-25",
+		"image": "/hmc-poster.jpg",
+		"creditspriority": [
+			{
+				"type": "credit",
+				"role": "Sound Design, Mixer",
+				"id": "1",
+				"name": "Justin Enoch"
+			}
+		],
+		"creditslaurels": [
+			{
+				"type": "credit",
+				"role": "Director, DP, Editor",
+				"name": "Aurora Brachman"
+			},
+			{
+				"type": "credit",
+				"role": "Director, Editor",
+				"name": "Latajh Simmons-Weaver"
+			},
+			{
+				"type": "laurel",
+				"image": "/sundance-25-laurel-white.png"
+			},
+			{
+				"type": "laurel",
+				"image": "/hmc-moma.png"
+			}
+		],
+		"description": "HOLD ME CLOSE explores the unique power and complexity of the relationship between two Queer Black women, Corinne and Tiana. Utilizing audio the couple self-recorded every day over the course of a season, Corinne & Tiana experience cycles of life's joys and pains together in the home they share.",
+		"pressquotes": [
+			{
+				"publication": "glaad.com",
+				"quote": "“The film doesn't shy away from the vulnerabilities and insecurities that arise within the relationship. Lines like, “I'm scared if I'm too happy, something bad will happen,” echo an ancestral fear of joy that comes from navigating systemic oppression while yearning for personal freedom. These words, spoken against a backdrop of growing distance and lingering affection, strike a deep chord.”"
+			}
+		],
+		"videos": [
+			{
+				"source": "vimeo",
+				"id": "945393509",
+				"description": "Short"
+			}
+		]
+	},
+	{
 		"id": "arevolutionaryact",
 		"title": "A Revolu\u200btionary Act",
 		"date": "2021-04-29",
