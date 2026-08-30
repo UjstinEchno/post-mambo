@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import projects from '../data/projects.json';
 import Menu from './Menu';
+import FadeImage from './FadeImage';
 
 function shuffle (array) {
 	var ctr = array.length,
@@ -169,7 +170,7 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 						{/* Left: poster */}
 							<div className='col-start-1 col-span-8 lg:col-span-4 xl:col-span-4 2xl:col-span-4 ml-0 md:ml-4'>
 								{projectinfo.image ? (
-									<img
+									<FadeImage
 										src={projectinfo.image}
 										width={projectinfo.imageWidth}
 										height={projectinfo.imageHeight}
@@ -226,7 +227,7 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 															<div
 																key={item.image}
 																style={randomOffset()}>
-																<img
+																<FadeImage
 																src={item.image}
 																decoding='async'
 																className='max-h-16 md:max-h-32 w-auto'

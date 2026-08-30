@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import FadeImage from './FadeImage';
 
 function PersonDetail ({ personinfo, credits, onClose, onPrev, onNext }) {
 	useEffect(() => {
@@ -65,7 +66,7 @@ function PersonDetail ({ personinfo, credits, onClose, onPrev, onNext }) {
 				</button>
 
 				<div className='flex items-center gap-4'>
-					<img
+					<FadeImage
 						src={personinfo.photo}
 						width={personinfo.photoWidth}
 						height={personinfo.photoHeight}
