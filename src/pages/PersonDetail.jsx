@@ -67,6 +67,9 @@ function PersonDetail ({ personinfo, credits, onClose, onPrev, onNext }) {
 				<div className='flex items-center gap-4'>
 					<img
 						src={personinfo.photo}
+						width={personinfo.photoWidth}
+						height={personinfo.photoHeight}
+						decoding='async'
 						className='h-16 w-16 rounded-full object-cover object-top border-2 border-white shadow-lg shadow-black/30 flex-shrink-0'
 					/>
 					<h1 className='uppercase text-silver font-authenticSans150 text-4xl md:text-6xl leading-none tracking-tight'>

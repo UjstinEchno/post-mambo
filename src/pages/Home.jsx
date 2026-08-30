@@ -26,7 +26,12 @@ function Home () {
 						<span className='w-1/2'>
 							<img
 								className='w-1/3 float-left mr-4'
-								src='/pm-logo-blue.png'></img>
+								src='/pm-logo-blue.png'
+								width={2160}
+								height={556}
+								loading='eager'
+								decoding='async'
+							/>
 						</span>
 						<p className='-mt-5 my-2'>
 							is an award-winning Los Angeles and Chicago based

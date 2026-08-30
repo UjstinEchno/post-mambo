@@ -169,7 +169,15 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 						{/* Left: poster */}
 							<div className='col-start-1 col-span-8 lg:col-span-4 xl:col-span-4 2xl:col-span-4 ml-0 md:ml-4'>
 								{projectinfo.image ? (
-									<img src={projectinfo.image} className='rounded-2xl border-1 border-white shadow-xl shadow-black/30'></img>
+									<img
+										src={projectinfo.image}
+										width={projectinfo.imageWidth}
+										height={projectinfo.imageHeight}
+										loading='eager'
+										fetchpriority='high'
+										decoding='async'
+										className='rounded-2xl border-1 border-white shadow-xl shadow-black/30'
+									/>
 								) : null}
 							</div>
 
@@ -218,7 +226,12 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 															<div
 																key={item.image}
 																style={randomOffset()}>
-																<img src={item.image} className='max-h-16 md:max-h-32 w-auto' />
+																<img
+																src={item.image}
+																loading='lazy'
+																decoding='async'
+																className='max-h-16 md:max-h-32 w-auto'
+															/>
 															</div>
 														);
 													}

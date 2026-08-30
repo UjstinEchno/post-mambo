@@ -7,6 +7,10 @@ function Person ({ personinfo, style, onClick }) {
 		>
 			<img
 				src={personinfo.photo}
+				width={personinfo.photoWidth}
+				height={personinfo.photoHeight}
+				loading='lazy'
+				decoding='async'
 				className='absolute inset-0 h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]'
 			/>
 			<div className='absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 pt-10'>

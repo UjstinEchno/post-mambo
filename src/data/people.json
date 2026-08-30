@@ -3,18 +3,24 @@
 		"id": 1,
 		"name": "Justin Enoch",
 		"photo": "/people-justin-work.jpg",
+		"photoWidth": 1280,
+		"photoHeight": 859,
 		"bio": "Justin Enoch is a Romanian-born, LA-based sound designer, composer, and interdisciplinary artist. Their work has screened at Sundance, TIFF, and the Student Academy Awards."
 	},
 	{
 		"id": 2,
 		"name": "Troy Lewis",
-		"photo": "/people-troy.png",
+		"photo": "/people-troy.jpg",
+		"photoWidth": 1068,
+		"photoHeight": 1600,
 		"bio": "Troy Lewis moved from Texas to Zambia at the age of 7, where he grew up in the capital, Lusaka. He is now a film editor based in Chicago. His work has screened at festivals such as Sundance, and Outfest, and PBS' AfroPop."
 	},
 	{
 		"id": 3,
 		"name": "Grace Hahn",
 		"photo": "/people-grace.jpg",
+		"photoWidth": 1067,
+		"photoHeight": 1600,
 		"bio": "Grace Hahn is a producer, accountant, and post-production manager. She was recognized by NewCity as one of Chicago's 2020 Film50 'Screen Gems.' Her dog is a tripawd."
 	}
 ]

@@ -4,6 +4,8 @@
 		"title": "Tahara",
 		"date": "2022-06-10",
 		"image": "/tahara-poster.jpg",
+		"imageWidth": 853,
+		"imageHeight": 1280,
 		"creditspriority": [
 			{
 				"type": "credit",
@@ -71,6 +73,8 @@
 		"title": "Mexican\u200bamerican",
 		"date": "2026-06-09",
 		"image": "/mexam-poster.jpg",
+		"imageWidth": 1400,
+		"imageHeight": 2074,
 		"creditspriority": [
 			{
 				"type": "credit",
@@ -119,6 +123,8 @@
 		"title": "Against Reality",
 		"date": "2022-09-09",
 		"image": "/againstreality-poster.jpg",
+		"imageWidth": 1400,
+		"imageHeight": 1860,
 		"creditspriority": [
 			{
 				"type": "credit",
@@ -166,6 +172,8 @@
 		"title": "All Jacked Up\u200band Full of Worms",
 		"date": "2022-07-16",
 		"image": "/worms-poster.jpg",
+		"imageWidth": 1400,
+		"imageHeight": 2068,
 		"creditspriority": [
 			{
 				"type": "credit",
@@ -209,6 +217,8 @@
 		"title": "Daugh\u200bters",
 		"date": "2024-08-14",
 		"image": "/daughters-poster.jpg",
+		"imageWidth": 1000,
+		"imageHeight": 1500,
 		"creditspriority": [
 			{
 				"type": "credit",
@@ -263,6 +273,8 @@
 		"title": "Inside the Red Sea Mission",
 		"date": "2023-05-28",
 		"image": "/redsea_poster.jpg",
+		"imageWidth": 853,
+		"imageHeight": 1280,
 		"creditspriority": [
 			{
 				"type": "credit",
@@ -303,6 +315,8 @@
 		"title": "Flail",
 		"date": "2024-05-11",
 		"image": "/flail_poster.jpg",
+		"imageWidth": 1000,
+		"imageHeight": 1233,
 		"creditspriority": [
 			{
 				"type": "credit",
@@ -351,6 +365,8 @@
 		"title": "Hold Me Close",
 		"date": "2025-01-25",
 		"image": "/hmc-poster.jpg",
+		"imageWidth": 1554,
+		"imageHeight": 2331,
 		"creditspriority": [
 			{
 				"type": "credit",
@@ -399,6 +415,8 @@
 		"title": "A Revolu\u200btionary Act",
 		"date": "2021-04-29",
 		"image": "/revolutionaryact_poster.png",
+		"imageWidth": 853,
+		"imageHeight": 1280,
 		"creditspriority": [
 			{
 				"type": "credit",
