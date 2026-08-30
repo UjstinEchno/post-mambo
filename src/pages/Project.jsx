@@ -1,6 +1,6 @@
 import YouTube from 'react-youtube';
 import Vimeo from '@u-wave/react-vimeo';
-import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import { useEffect, useMemo, useCallback, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import projects from '../data/projects.json';
 import Menu from './Menu';
@@ -28,9 +28,12 @@ export const colorsArr = ['bg-blue', 'bg-pink', 'bg-olive', 'bg-orange', 'bg-yel
 
 function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 	const { id } = useParams();
-	const [creditsLaurels, setCreditsLaurels] = useState([]);
-
 	const projectinfo = useMemo(() => initialProjectInfo || findProjectById(id), [initialProjectInfo, id]);
+
+	const creditsLaurels = useMemo(
+		() => (projectinfo ? shuffle([...projectinfo.creditslaurels]) : []),
+		[projectinfo]
+	);
 
 	// Math can't know a coined word's real boundary ("MexicanAmerican" isn't in any
 	// dictionary) — so this checks for a manual hint first: insert a zero-width space
@@ -70,8 +73,6 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 
 	useEffect(() => {
 		if (projectinfo) {
-			const mountArray = shuffle([...projectinfo.creditslaurels]);
-			setCreditsLaurels(mountArray);
 			window.scrollTo(0, 0);
 		}
 	}, [projectinfo]);
@@ -229,6 +230,8 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 																style={randomOffset()}>
 																<FadeImage
 																src={item.image}
+																width={item.imageWidth}
+																height={item.imageHeight}
 																decoding='async'
 																className='max-h-16 md:max-h-32 w-auto'
 															/>

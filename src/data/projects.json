@@ -38,19 +38,27 @@
 			},
 			{
 				"type": "laurel",
-				"image": "/laurel-tiff-2022-white.png"
+				"image": "/laurel-tiff-2022-white.png",
+				"imageWidth": 279,
+				"imageHeight": 320
 			},
 			{
 				"type": "laurel",
-				"image": "/tahara-laurel-slamdance-white.png"
+				"image": "/tahara-laurel-slamdance-white.png",
+				"imageWidth": 511,
+				"imageHeight": 320
 			},
 			{
 				"type": "laurel",
-				"image": "/tahara-laurel-outfest-white.png"
+				"image": "/tahara-laurel-outfest-white.png",
+				"imageWidth": 374,
+				"imageHeight": 320
 			},
 			{
 				"type": "laurel",
-				"image": "/tahara-laurel-maryland-white.png"
+				"image": "/tahara-laurel-maryland-white.png",
+				"imageWidth": 483,
+				"imageHeight": 320
 			}
 		],
 		"description": "“Tahara” uses its sound design, inspired by Radiolab and Kelly Reichardt, to create deeply textured and emotionally resonant sonic narratives. The deliberate directorial choices, from the absence of a traditional score to the square aspect ratio, allow a multi-dimensional auditory experience to emerge - between the magnified Foley and expansive ambiences - one that uncovers the intricate inner worlds of its young adult characters as they navigate the challenges of aging, processing mortality, falling in love, filling in identity, and finding spirituality.",
@@ -96,11 +104,15 @@
 			},
 			{
 				"type": "laurel",
-				"image": "/mexam-tribeca-award-white.png"
+				"image": "/mexam-tribeca-award-white.png",
+				"imageWidth": 491,
+				"imageHeight": 320
 			},
 			{
 				"type": "laurel",
-				"image": "/mexam-riff.png"
+				"image": "/mexam-riff.png",
+				"imageWidth": 640,
+				"imageHeight": 325
 			}
 		],
 		"description": "Expertly merging old VHS home movies with new family interviews, filmmaker Eddie Sánchez traces his parents' journey from Mexico to the U.S. in this poignant and affecting documentary debut.",
@@ -141,15 +153,21 @@
 			},
 			{
 				"type": "laurel",
-				"image": "/laurel-tiff-2022-white.png"
+				"image": "/laurel-tiff-2022-white.png",
+				"imageWidth": 279,
+				"imageHeight": 320
 			},
 			{
 				"type": "laurel",
-				"image": "/laurel-ampas-gold-2022.png"
+				"image": "/laurel-ampas-gold-2022.png",
+				"imageWidth": 320,
+				"imageHeight": 320
 			},
 			{
 				"type": "laurel",
-				"image": "/laurel-annarbor-2023-white.png"
+				"image": "/laurel-annarbor-2023-white.png",
+				"imageWidth": 355,
+				"imageHeight": 320
 			}
 		],
 		"description": "Against Reality stemmed from a collaboration between Olivia Peace, using GANS, and Justin Enoch, using MAX MSP, to chronicle lucid dreams by drawing on the collective consciousness of the internet and artificial technology to imagine a natural flow of thoughts unmediated by conventional logic.",
@@ -190,11 +208,15 @@
 			},
 			{
 				"type": "laurel",
-				"image": "/worms-laurel-fantasia-white.png"
+				"image": "/worms-laurel-fantasia-white.png",
+				"imageWidth": 981,
+				"imageHeight": 320
 			},
 			{
 				"type": "laurel",
-				"image": "/worms-laurel-fantastic-white.png"
+				"image": "/worms-laurel-fantastic-white.png",
+				"imageWidth": 503,
+				"imageHeight": 320
 			}
 		],
 		"description": "Roscoe, a janitor for a scuzzy love motel, drifts through life until he discovers a hidden stash of powerful hallucinogenic worms. Guided by visions of a giant floating Worm, he encounters Benny, a disturbed recluse obsessed with finding love. The two get hooked on worms and slither into the primordial ooze.",
@@ -250,7 +272,9 @@
 			},
 			{
 				"type": "laurel",
-				"image": "/sundance_24_laurel-white.png"
+				"image": "/sundance_24_laurel-white.png",
+				"imageWidth": 690,
+				"imageHeight": 320
 			}
 		],
 		"description": "A moving lesson in empathy and forgiveness, Daughters is a result of an eight-year documentary journey that filmmaker Natalie Rae and Angela Patton, an activist advocating for “at-promise” girls, embarked upon. As Aubrey, Santana, Raziah, and Ja’Ana get ready for the special event, they speak candidly about their hopes, dreams, and disappointments. There is an innate wisdom and honesty to what they share about their dads’ inconsistent presence; an awareness far beyond their years. Daughters meaningfully challenges many stereotypes around incarceration and serves as a poignant reminder that maintaining family bonds can be both healing and empowering.",
@@ -338,11 +362,15 @@
 			},
 			{
 				"type": "laurel",
-				"image": "/sundance_24_laurel-white.png"
+				"image": "/sundance_24_laurel-white.png",
+				"imageWidth": 690,
+				"imageHeight": 320
 			},
 			{
 				"type": "laurel",
-				"image": "/flail_comedy_laurel-white.png"
+				"image": "/flail_comedy_laurel-white.png",
+				"imageWidth": 468,
+				"imageHeight": 320
 			}
 		],
 		"description": "It's her boss's birthday, and Allie is trying as hard as she can.",
@@ -388,11 +416,15 @@
 			},
 			{
 				"type": "laurel",
-				"image": "/sundance-25-laurel-white.png"
+				"image": "/sundance-25-laurel-white.png",
+				"imageWidth": 745,
+				"imageHeight": 320
 			},
 			{
 				"type": "laurel",
-				"image": "/hmc-moma.png"
+				"image": "/hmc-moma.png",
+				"imageWidth": 745,
+				"imageHeight": 320
 			}
 		],
 		"description": "HOLD ME CLOSE explores the unique power and complexity of the relationship between two Queer Black women, Corinne and Tiana. Utilizing audio the couple self-recorded every day over the course of a season, Corinne & Tiana experience cycles of life's joys and pains together in the home they share.",
