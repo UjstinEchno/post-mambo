@@ -15,7 +15,7 @@ function FadeImage ({ className = '', onLoad, ...imgProps }) {
 				setLoaded(true);
 				onLoad?.(e);
 			}}
-			className={`transition-opacity duration-700 ease-out ${loaded ? 'opacity-100' : 'opacity-0'} ${className}`}
+			className={`transition-opacity duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? 'opacity-100' : 'opacity-0'} ${className}`}
 			{...imgProps}
 		/>
 	);
