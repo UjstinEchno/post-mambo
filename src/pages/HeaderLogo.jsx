@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import FadeImage from './FadeImage';
 
 function HeaderLogo () {
 	const { pathname } = useLocation();
@@ -32,7 +33,7 @@ function HeaderLogo () {
 							2xl:-top-6 
 							2xl:-left-6 
 							2xl:-right-4'>
-				<img src='/pm-logo-blue.png' width={2160} height={556} loading='eager' decoding='async' />
+				<FadeImage src='/pm-logo-blue.png' width={2160} height={556} loading='eager' decoding='async' />
 			</div>
 		);
 	}
@@ -62,7 +63,7 @@ function HeaderLogo () {
 							2xl:-right-4 
 
 							${scrolled ? 'scale-75' : 'scale-100'}`}>
-			<img src='/pm-logo-white.png' width={2161} height={556} loading='eager' decoding='async' />
+			<FadeImage src='/pm-logo-white.png' width={2161} height={556} loading='eager' decoding='async' />
 		</div>
 	);
 }

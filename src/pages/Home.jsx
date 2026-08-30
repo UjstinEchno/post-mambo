@@ -1,5 +1,6 @@
 import Vimeo from '@u-wave/react-vimeo';
 import Menu from './Menu';
+import FadeImage from './FadeImage';
 
 function Home () {
 	return (
@@ -24,7 +25,7 @@ function Home () {
 				<div className='z-10 max-[640px]:hidden absolute right-8 mt-[340px] w-1/4 rounded-xl bg-silver text-blue tracking-tight p-8 font-authenticSans90 text-2xl border-2 border-white shadow-xl shadow-black/30'>
 					<div>
 						<span className='w-1/2'>
-							<img
+							<FadeImage
 								className='w-1/3 float-left mr-4'
 								src='/pm-logo-blue.png'
 								width={2160}
