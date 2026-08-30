@@ -9,7 +9,6 @@ function Person ({ personinfo, style, onClick }) {
 				src={personinfo.photo}
 				width={personinfo.photoWidth}
 				height={personinfo.photoHeight}
-				loading='lazy'
 				decoding='async'
 				className='absolute inset-0 h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]'
 			/>

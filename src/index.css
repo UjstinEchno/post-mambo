@@ -10,7 +10,6 @@
 
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
 	font-family: 'AUTHENTIC Sans 90';
@@ -20,7 +19,6 @@
 
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
 	font-family: 'AUTHENTIC Sans 130';
@@ -30,7 +28,6 @@
 
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
 	font-family: 'AUTHENTIC Sans 150';
@@ -40,7 +37,6 @@
 
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
 	font-family: 'AUTHENTIC Sans Condensed 60';
@@ -50,7 +46,6 @@
 
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
 	font-family: 'AUTHENTIC Sans Condensed 90';
@@ -60,7 +55,6 @@
 
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
 	font-family: 'AUTHENTIC Sans Condensed 130';
@@ -70,7 +64,6 @@
 
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
 	font-family: 'AUTHENTIC Sans Condensed 150';
@@ -80,7 +73,6 @@
 
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 @font-face {
 	font-family: 'PicNic-Regular';
@@ -90,7 +82,6 @@
 
 	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
 }
 
 :root {

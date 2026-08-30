@@ -228,7 +228,6 @@ function Project ({ projectinfo: initialProjectInfo, bgColor }) {
 																style={randomOffset()}>
 																<img
 																src={item.image}
-																loading='lazy'
 																decoding='async'
 																className='max-h-16 md:max-h-32 w-auto'
 															/>
